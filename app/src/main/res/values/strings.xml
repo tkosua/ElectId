@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Elect ID</string>
+    <string name="title_activity_sign_in">Elect Sign In</string>
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- registration details related -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_retype_password">Retype Password</string>
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="action_signin_companyId">Sign in with a Corporate Email</string>
+    <string name="action_forgot_password">Forgot password?</string>
+    <string name="action_learn_more">Learn more</string>
+
+    <string name="txt_use_another_account">You can sign in with another account</string>
+    <string name="txt_make_diff">Today! Make A Difference</string>
+    <string name="txt_you_diff">You! Make The Difference</string>
+    <string name="txt_updated">Get real time updates on polls. Be the first to know.</string>
+    <string name="txt_my_vote">My Vote</string>
+
+    <string name="image_appicon">appIcon</string>
+    <string name="image_new_idea">new idea</string>
+    <string name="image_location">location</string>
+    <string name="image_print">print</string>
+    <string name="image_transfer_knowledge">transfer knowlegde</string>
+
+    <!-- spinner content below-->
+    <string-array name="regions">
+        <item>Greater Accra</item>
+        <item>Eastern</item>
+        <item>Central</item>
+        <item>Western</item>
+        <item>Volta</item>
+        <item>Ashanti</item>
+        <item>Brong Ahafo</item>
+        <item>Northern</item>
+        <item>Upper East</item>
+        <item>Upper West</item>
+    </string-array>
+
+</resources>

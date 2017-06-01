@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageAppIcon"
+            android:layout_width="@dimen/margin70"
+            android:layout_height="@dimen/margin70"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/margin10"
+            android:contentDescription="@string/image_appicon"
+            android:src="@drawable/vote1" />
+
+        <TextView
+            android:id="@+id/txtMyVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin5"
+            android:layout_toEndOf="@id/imageAppIcon"
+            android:text="@string/txt_my_vote"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size30" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_sign_in"
+        android:textSize="@dimen/size25"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/prompt_email"
+            android:maxLines="1"
+            android:textSize="@dimen/size15"
+            android:background="@drawable/rectangle_background"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTxtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/prompt_password"
+            android:textColor="@color/colorPrimaryDark"
+            android:maxLines="1"
+            android:textSize="@dimen/size15"
+            android:background="@drawable/rectangle_background"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_forgot_password"
+        android:textColor="@color/colorAqua"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/size15"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="signIn"
+        android:text="@string/action_sign_in"
+        android:textAllCaps="true"
+        android:textSize="@dimen/size15"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <TextView
+        android:id="@+id/txtWantToDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_use_another_account"
+        android:textSize="@dimen/size15"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <TextView
+        android:id="@+id/btnSignInCompanyId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_signin_companyId"
+        android:textColor="@color/colorAqua"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/size15"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <TextView
+        android:id="@+id/lineSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_background"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginBottom="@dimen/margin10"/>
+
+    <TextView
+        android:id="@+id/txtMakeDiff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_make_diff"
+        android:textSize="@dimen/size15"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/margin10">
+
+        <ImageView
+            android:id="@+id/imageIdea"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_weight="0.25"
+            android:src="@drawable/idea"
+            android:contentDescription="@string/image_new_idea" />
+
+        <ImageView
+            android:id="@+id/imageLocation"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_weight="0.25"
+            android:src="@drawable/location"
+            android:contentDescription="@string/image_location" />
+
+        <ImageView
+            android:id="@+id/imageShare"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_weight="0.25"
+            android:src="@drawable/share0"
+            android:contentDescription="@string/image_transfer_knowledge" />
+
+        <ImageView
+            android:id="@+id/imagePrint"
+            android:layout_width="@dimen/margin50"
+            android:layout_height="@dimen/margin50"
+            android:layout_weight="0.25"
+            android:src="@drawable/print0"
+            android:contentDescription="@string/image_print" />
+
+    </LinearLayout>
+
+</LinearLayout>
